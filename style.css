@@ -1,0 +1,232 @@
+:root {
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-open-sans: 'Open sans', sans-serif;
+    --fw-regular: 400;
+    --fw-md: 500;
+
+    --color-primary: #562EFF;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-danger: #ED6B4F;
+    --color-bg: #F3F1FF;
+    --color-bg-small: #FFE4E8;
+    --color-star: #FFC014;
+    --color-gray-light: #9F9F9F;
+    --color-gray-empty: #AEAEAE;
+    --color-gray-md: #A2A2A2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-poppins);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: var(--fw-md);
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: var(--fw-md);
+}
+
+h4 {
+    font-size: 1.1251875rem;
+}
+
+h5 {
+    font-size: 14.69px;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    width: 60vw;
+    background-color: var(--color-white);
+    border-radius: 1rem;
+}
+
+.section-title {
+    color: var(--color-primary);
+}
+
+body {
+    background-color: var(--color-bg);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================================================nav========================================================================= */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-primary);
+    margin-bottom: 2.25rem;
+}
+
+.nav-container {
+    color: var(--color-white);
+    background-color: transparent;
+    display: flex;
+    padding: 1.625rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2.25rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--color-white);
+}
+
+.logo img {
+    width: 40.42px;
+    height: 51px;
+}
+
+/* =============================================================================Top Players========================================================== */
+
+.players-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
+.player-names {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player a {
+    text-decoration: none;
+    font-weight: var(--fw-md);
+    color: var(--color-black);
+    font-size: 1.125rem;
+}
+
+hr {
+    background-color: #D1D1D1;
+    margin: 0 2rem;
+    border: none;
+    height: 1px;
+}
+
+/* ==============================================================================Blog================================================================ */
+.top-blogs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 2rem;
+}
+
+.blogs {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.blog {
+    display: flex;
+    gap: 1rem;
+}
+
+.blog__thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog__info {
+    overflow-wrap: break-word;
+    line-height: 2.2rem;
+}
+
+.blog__info a {
+    color: var(--color-primary);
+    font-size: 1.1251875rem;
+    font-weight: var(--fw-md);
+}
+
+.blog__info a::before {
+    content: 'By ';
+    color: var(--color-gray-light);
+    font-weight: 400;
+}
+
+/* ==============================================================Course================================================== */
+
+.courses__container{
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.course{
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    padding: .9rem;
+    border-radius: .5rem;
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+}
+
+.star i{
+    height: .75rem;
+    width: .75rem;
+}
+
+.stars .filled{
+    color: var(--color-star);
+}
+
+.stars .empty{
+    color: var(--color-gray-empty);
+}
